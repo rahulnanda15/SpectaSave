@@ -1,0 +1,28 @@
+- !<Material/b4e0abbc-dc23-41b5-af56-d00b58efaa24>
+  PackagePath: ""
+  PassesInfo:
+    - !<own> f121b5e1-5c8b-4760-b15f-81aa0926e373
+- !<PassInfo/f121b5e1-5c8b-4760-b15f-81aa0926e373>
+  CachedProperties:
+    []
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0.000000, y: 0.000000}
+  FrustumCulling: Auto
+  FrustumCullPad: 0.000000
+  InstanceCount: 1
+  Defines:
+    []
+  BlendMode: PremultipliedAlphaAuto
+  Properties:
+    Port_FinalColor_N004:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+  Pass: !<reference> 9b35d085-1356-4ded-8699-a22117cce9a5

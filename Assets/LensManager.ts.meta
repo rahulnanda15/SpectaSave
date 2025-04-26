@@ -1,0 +1,45 @@
+- !<AssetImportMetadata/7f3821f8-56c7-4be1-8598-7241c75f736b>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 693abe9d-b4d0-42a5-ae10-47ba1ae873fe
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 693abe9d-b4d0-42a5-ae10-47ba1ae873fe
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 51e45564-3b73-4c99-a101-fa9dc9b219ea
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/51e45564-3b73-4c99-a101-fa9dc9b219ea>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 178c6d34-c8d5-4fb5-92c0-411174863bb4
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    destinationReference: false
+    faceObjectAttached: false
+    lerpSpeed: false
+  ScriptTypesHidden:
+    {}
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - destinationReference: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      lerpSpeed: 0.100000
+      faceObjectAttached: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input SceneObject faceObjectAttached {"hint":"The prefab object we will instantiate when clicking the create button"}'
+    - '// @input SceneObject destinationReference {"hint":"The position reference the object will move to on left-hand pinch"}'
+    - '// @input float lerpSpeed = 0.1 {"hint":"Speed at which the object moves to the destination on pinch"}'

@@ -1,0 +1,130 @@
+- !<AssetImportMetadata/6b75d97b-4df0-42d6-92bd-1c954c504d36>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> f9816510-4025-4898-9711-6c121e0feefc
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> f9816510-4025-4898-9711-6c121e0feefc
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    AssetLibraryId: 91uCK9xPusn64PWkS99OY
+  AssetDataMap:
+    ObjectPrefab: !<own> d363fe83-57aa-4db1-8fbc-ba361a2a214d
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<AudioComponent/0a63cebb-82de-4b95-9049-b7f616c09633>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 3486b1c1-0d0e-487c-8cde-4d48a966fc05
+  EnableAutoplayLoop: false
+  Volume: 0.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<ObjectPrefab/477b9a23-7d45-4306-adab-09a94e2aac45>
+  PackagePath: ""
+  objects:
+    - !<own> 7430671f-b0be-4d1c-b58d-d3e38eb6d32f
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/48ab2cf6-3484-4a77-a918-ecc530622ec7>
+  PrefabRemaps:
+    []
+  Name: "TTS Controller [EDIT_ME]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 63bd9497-0498-4ba1-95fb-e68b632a2cb3
+  Components:
+    - !<own> 9809654d-0239-46dd-aaab-bb31f6864a2d
+    - !<own> d394b8cf-32fb-433e-8bc6-a165af3727b1
+- !<SceneObject/63bd9497-0498-4ba1-95fb-e68b632a2cb3>
+  PrefabRemaps:
+    []
+  Name: Audio Track
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 0a63cebb-82de-4b95-9049-b7f616c09633
+- !<SceneObject/7430671f-b0be-4d1c-b58d-d3e38eb6d32f>
+  PrefabRemaps:
+    []
+  Name: TextToSpeech__PLACE_IN_OBJECTS_PANEL
+  Enabled: true
+  Layers: 1048576
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 48ab2cf6-3484-4a77-a918-ecc530622ec7
+  Components:
+    []
+- !<ScriptComponent/9809654d-0239-46dd-aaab-bb31f6864a2d>
+  PrefabRemaps:
+    []
+  Name: TTSController
+  Enabled: true
+  ScriptAsset: !<reference> e7d02343-a010-45de-91ae-906238a49c0d
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      tts: !<reference.TextToSpeechModule> ff50c9ea-dada-4979-b162-258ef89d279d
+      audio: !<reference.AudioComponent> d394b8cf-32fb-433e-8bc6-a165af3727b1
+      voicePace: 1.500000
+  ScriptTypes:
+    "":
+      {}
+- !<ObjectPrefabAssetData/d363fe83-57aa-4db1-8fbc-ba361a2a214d>
+  SourceRemaps:
+    - 19c3abfe-c065-40c6-bbe1-681efa96b1ad: d394b8cf-32fb-433e-8bc6-a165af3727b1
+    - 2173b6e4-8306-46f4-a800-72339e02a5c6: 0a63cebb-82de-4b95-9049-b7f616c09633
+    - 61dee074-0d26-43ed-8c6a-8b160e990034: 7430671f-b0be-4d1c-b58d-d3e38eb6d32f
+    - aef8ca7b-99e2-473a-ac65-799a87ddd239: 9809654d-0239-46dd-aaab-bb31f6864a2d
+    - b43f2329-0614-4204-ab06-08044c25aef8: 63bd9497-0498-4ba1-95fb-e68b632a2cb3
+    - d61e099d-53a4-4868-9fa5-d2bb2ae84b2a: 48ab2cf6-3484-4a77-a918-ecc530622ec7
+    - f9816510-4025-4898-9711-6c121e0feefc: 477b9a23-7d45-4306-adab-09a94e2aac45
+  SourceState: !<own> 477b9a23-7d45-4306-adab-09a94e2aac45
+- !<AudioComponent/d394b8cf-32fb-433e-8bc6-a165af3727b1>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 3486b1c1-0d0e-487c-8cde-4d48a966fc05
+  EnableAutoplayLoop: true
+  Volume: 1.000000
+  EnableMixToSnap: true
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
