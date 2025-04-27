@@ -1,0 +1,50 @@
+- !<AssetImportMetadata/a18e47cc-53d0-4c32-8838-ea4d57ae7039>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 3b3fb1b7-5df3-439e-b568-a17c3a540b00
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 3b3fb1b7-5df3-439e-b568-a17c3a540b00
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> a12bd98b-8232-4f52-b281-d8f5139b94d6
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/a12bd98b-8232-4f52-b281-d8f5139b94d6>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: b9d27e30-733c-4282-af4c-51237da037fb
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    audioTrack: false
+    imageObject: false
+    left: false
+    right: false
+    threshold: false
+  ScriptTypesHidden:
+    {}
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - spawner: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      activationDistance: 0.150000
+      ttsControllerScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      faceTrackingComponent: !<reference.FaceTracking> 00000000-0000-0000-0000-000000000000
+      left: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      right: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      imageObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      threshold: !<float> 10.000000
+      audioTrack: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      faceMeshObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

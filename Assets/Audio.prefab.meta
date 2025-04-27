@@ -1,0 +1,146 @@
+- !<AssetImportMetadata/4d7d115f-a465-4e0a-a8c8-707a8f44cdd5>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> e3083283-a27c-4714-902e-a9e3db1d80bf
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> e3083283-a27c-4714-902e-a9e3db1d80bf
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> 0a4b0add-45dd-4c3c-88a5-8394244550ea
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefab/074e0365-3d30-48e3-8af2-40a6e8ae204e>
+  PackagePath: ""
+  objects:
+    - !<own> d75c1e5b-2c7e-441d-9f26-83d792de0961
+  LazyLoading: false
+  RetainAssets: true
+- !<ObjectPrefabAssetData/0a4b0add-45dd-4c3c-88a5-8394244550ea>
+  SourceRemaps:
+    - 10e9f701-203f-4e11-ab5e-1b3b2d798c00: b937e149-1a1f-416d-a7b0-ea4170d9ce39
+    - 3312d6ef-f229-4d09-a215-9a0b5cd6f211: 831f959c-1b3b-4113-859f-47dff2cbcdeb
+    - 413cacd1-f0c9-496a-8b09-343c3fb3767d: 9616cbb6-4e36-4440-a7e7-c2e697244722
+    - 4f5a1fcb-7b9e-4c61-9162-4442fa1c9c12: 32dfaad3-968d-40ba-ad5f-ba01244eaf2e
+    - 91b1e863-ae1d-479d-b4d0-d189ec6d2300: 42cfd146-edff-4fac-ab43-ee0d705da435
+    - a8464213-03e9-458f-a78e-de4d8d820ab5: e97d75bf-032d-4555-9a61-f73dda29c535
+    - e3083283-a27c-4714-902e-a9e3db1d80bf: 074e0365-3d30-48e3-8af2-40a6e8ae204e
+    - fcda01fe-6276-4db1-aa3c-8a9dcf931165: d75c1e5b-2c7e-441d-9f26-83d792de0961
+  SourceState: !<own> 074e0365-3d30-48e3-8af2-40a6e8ae204e
+- !<AudioComponent/32dfaad3-968d-40ba-ad5f-ba01244eaf2e>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 3486b1c1-0d0e-487c-8cde-4d48a966fc05
+  EnableAutoplayLoop: false
+  Volume: 0.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<AudioComponent/42cfd146-edff-4fac-ab43-ee0d705da435>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 3486b1c1-0d0e-487c-8cde-4d48a966fc05
+  EnableAutoplayLoop: true
+  Volume: 1.000000
+  EnableMixToSnap: true
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
+- !<ScriptComponent/831f959c-1b3b-4113-859f-47dff2cbcdeb>
+  PrefabRemaps:
+    []
+  Name: TTSController
+  Enabled: true
+  ScriptAsset: !<reference> e7d02343-a010-45de-91ae-906238a49c0d
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      tts: !<reference.TextToSpeechModule> ff50c9ea-dada-4979-b162-258ef89d279d
+      audio: !<reference.AudioComponent> 42cfd146-edff-4fac-ab43-ee0d705da435
+      voicePace: 1.500000
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/9616cbb6-4e36-4440-a7e7-c2e697244722>
+  PrefabRemaps:
+    []
+  Name: TextToSpeech__PLACE_IN_OBJECTS_PANEL
+  Enabled: true
+  Layers: 1048576
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> b937e149-1a1f-416d-a7b0-ea4170d9ce39
+  Components:
+    []
+- !<SceneObject/b937e149-1a1f-416d-a7b0-ea4170d9ce39>
+  PrefabRemaps:
+    []
+  Name: "TTS Controller [EDIT_ME]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> e97d75bf-032d-4555-9a61-f73dda29c535
+  Components:
+    - !<own> 831f959c-1b3b-4113-859f-47dff2cbcdeb
+    - !<own> 42cfd146-edff-4fac-ab43-ee0d705da435
+- !<SceneObject/d75c1e5b-2c7e-441d-9f26-83d792de0961>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 9616cbb6-4e36-4440-a7e7-c2e697244722
+  Components:
+    []
+- !<SceneObject/e97d75bf-032d-4555-9a61-f73dda29c535>
+  PrefabRemaps:
+    []
+  Name: Audio Track
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 32dfaad3-968d-40ba-ad5f-ba01244eaf2e
